@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppProvider from "./context";
 import MyBasket from "./components/MyBasket";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mybasket" element={<MyBasket />} />
+          <Route path="/about" element={<About />} />
+
           <Route path="*" element={<Error />} />
         </Routes>
       </AppProvider>
